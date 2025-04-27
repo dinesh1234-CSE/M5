@@ -1,4 +1,5 @@
-EX-21-POINTERS
+
+# EX-21-POINTERS
 # AIM:
 Write a C program to convert a 23.65 into 25 using pointer
 
@@ -10,24 +11,16 @@ Write a C program to convert a 23.65 into 25 using pointer
 
 ## PROGRAM:
 
+![Screenshot 2025-04-27 154939](https://github.com/user-attachments/assets/e4435bb7-0fbb-408a-a2d1-f2d1df4644de)
+
 ## OUTPUT:
  	
-
-
-
-
-
-
-
-
-
-
+![Screenshot 2025-04-27 154944](https://github.com/user-attachments/assets/192d492f-516c-4505-b9ae-2e4bb015f629)
 
 ## RESULT:
 Thus the program to convert a 23.65 into 25 using pointer has been executed successfully.
  
  
-
 
 # EX-22-FUNCTIONS AND STORAGE CLASS
 
@@ -45,14 +38,17 @@ Write a C program to calculate the Product of first 12 natural numbers using Rec
 6.	Print the result, indicating it is the product of the first 12 natural numbers.
 
 ## PROGRAM:
-## OUTPUT:
-         		
-## RESULT:
 
+![Screenshot 2025-04-27 155058](https://github.com/user-attachments/assets/247e8dda-9897-49aa-89da-64d2632e08f2)
+
+## OUTPUT:
+
+![Screenshot 2025-04-27 155103](https://github.com/user-attachments/assets/51f53d85-912e-486e-a558-8fb37e8aeb28)
+           
+## RESULT:
 Thus the program has been executed successfully.
  
  
-
 
 # EX-23-ARRAYS AND ITS OPERATIONS
 
@@ -69,19 +65,16 @@ Write C Program to find Sum of each row of a Matrix
 
 ## PROGRAM:
 
-
+![Screenshot 2025-04-27 155238](https://github.com/user-attachments/assets/e044cc7d-7ca0-41d9-9c68-e95accfe52da)
 
 ## OUTPUT
 
+![Screenshot 2025-04-27 155247](https://github.com/user-attachments/assets/738fbb9a-1251-44ea-895e-7c1a9dee9a93)
 
- 
- 
-
- ## RESULT
+## RESULT
  
 
-
-# EX-24-STRINGS
+## EX-24-STRINGS
 
 ## AIM:
 
@@ -97,10 +90,11 @@ Write C program for the below pyramid string pattern. Enter a string: PROGRAM En
 
 ## PROGRAM:
 
+![Screenshot 2025-04-27 155409](https://github.com/user-attachments/assets/64188c3d-9db3-4ef2-b627-b7bb386e7844)
 
  ## OUTPUT
 
- 
+ ![Screenshot 2025-04-27 155416](https://github.com/user-attachments/assets/4ca6708a-74bb-495a-99a9-18dd28275734)
 
 ## RESULT
 
@@ -108,10 +102,6 @@ Thus the C program to String process executed successfully
  
 
  
-.
-
-
-
 # EX -25 –DISPLAYING ARRAYS USING POINTERS
 ## AIM
 
@@ -133,12 +123,11 @@ Step 6: End the program.
 
 ## PROGRAM
 
+![Screenshot 2025-04-27 155558](https://github.com/user-attachments/assets/031d3c95-8384-4cb6-8af7-86f4195d0743)
+
 ## OUTPUT
-
+![Screenshot 2025-04-27 155605](https://github.com/user-attachments/assets/3a6d77e6-feb7-44f9-a25e-c775c1857c64)
  
-
 ## RESULT
-
 Thus the C program to read and display an array of any 6 integer elements using pointer has been executed
-
 
