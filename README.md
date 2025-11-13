@@ -10,12 +10,24 @@ Write a C program to convert a 23.65 into 25 using pointer
 4.	Print the modified value.
 
 ## PROGRAM:
+```C
+#include <stdio.h>
 
-![Screenshot 2025-04-27 154939](https://github.com/user-attachments/assets/e4435bb7-0fbb-408a-a2d1-f2d1df4644de)
+int main() {
+    float num = 23.65;
+    float *ptr;
+    ptr = &num;
+    printf("Before conversion: %.2f\n", num);
+    *ptr = 25.0;
+    printf("After conversion: %.2f\n", num);
+    return 0;
+}
+```
 
 ## OUTPUT:
- 	
-![Screenshot 2025-04-27 154944](https://github.com/user-attachments/assets/192d492f-516c-4505-b9ae-2e4bb015f629)
+
+<img width="324" height="91" alt="Screenshot 2025-11-13 083222" src="https://github.com/user-attachments/assets/dc4bfd58-5f6b-46fe-b190-481f80cc63de" />
+
 
 ## RESULT:
 Thus the program to convert a 23.65 into 25 using pointer has been executed successfully.
@@ -38,13 +50,27 @@ Write a C program to calculate the Product of first 12 natural numbers using Rec
 6.	Print the result, indicating it is the product of the first 12 natural numbers.
 
 ## PROGRAM:
+```C
+#include <stdio.h>
 
-![Screenshot 2025-04-27 155058](https://github.com/user-attachments/assets/247e8dda-9897-49aa-89da-64d2632e08f2)
+int product(int n) {
+    if (n == 1)
+        return 1;
+    else
+        return n * product(n - 1);
+}
+
+int main() {
+    int result = product(12);
+    printf("Product of first 12 natural numbers = %d\n", result);
+    return 0;
+}
+```
 
 ## OUTPUT:
 
-![Screenshot 2025-04-27 155103](https://github.com/user-attachments/assets/51f53d85-912e-486e-a558-8fb37e8aeb28)
-           
+<img width="562" height="45" alt="image" src="https://github.com/user-attachments/assets/d1962b02-a5b9-4e3b-b23e-6ec886fcfc8b" />
+
 ## RESULT:
 Thus the program has been executed successfully.
  
@@ -64,16 +90,45 @@ Write C Program to find Sum of each row of a Matrix
 4.	Print the sum for each row.
 
 ## PROGRAM:
+```C
+#include <stdio.h>
 
-![Screenshot 2025-04-27 155238](https://github.com/user-attachments/assets/e044cc7d-7ca0-41d9-9c68-e95accfe52da)
+int main() {
+    int rows, cols, i, j;
+    int matrix[10][10], sum;
+
+    printf("Enter number of rows: ");
+    scanf("%d", &rows);
+    printf("Enter number of columns: ");
+    scanf("%d", &cols);
+
+    printf("Enter elements of the matrix:\n");
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    for(i = 0; i < rows; i++) {
+        sum = 0;
+        for(j = 0; j < cols; j++) {
+            sum += matrix[i][j];
+        }
+        printf("Sum of row %d = %d\n", i + 1, sum);
+    }
+
+    return 0;
+}
+```
 
 ## OUTPUT
 
-![Screenshot 2025-04-27 155247](https://github.com/user-attachments/assets/738fbb9a-1251-44ea-895e-7c1a9dee9a93)
+<img width="590" height="184" alt="image" src="https://github.com/user-attachments/assets/73c5ffb8-7ff4-4748-8568-17ae7dca7477" />
+
 
 ## RESULT
+ Thus the program has been executed successfully.
  
-
 ## EX-24-STRINGS
 
 ## AIM:
@@ -90,11 +145,34 @@ Write C program for the below pyramid string pattern. Enter a string: PROGRAM En
 
 ## PROGRAM:
 
-![Screenshot 2025-04-27 155409](https://github.com/user-attachments/assets/64188c3d-9db3-4ef2-b627-b7bb386e7844)
+```C
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "PROGRAM";
+    int rows;
+
+    printf("Enter number of rows: ");
+    scanf("%d", &rows);
+
+    int len = strlen(str);
+
+    for (int i = 1; i <= rows; i++) {
+        for (int j = 0; j < i; j++) {
+            printf("%c ", str[j % len]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
 
  ## OUTPUT
 
- ![Screenshot 2025-04-27 155416](https://github.com/user-attachments/assets/4ca6708a-74bb-495a-99a9-18dd28275734)
+<img width="299" height="203" alt="image" src="https://github.com/user-attachments/assets/8b9876fa-84d7-4907-b1cd-04941b5c59b6" />
+
 
 ## RESULT
 
@@ -123,10 +201,32 @@ Step 6: End the program.
 
 ## PROGRAM
 
-![Screenshot 2025-04-27 155558](https://github.com/user-attachments/assets/031d3c95-8384-4cb6-8af7-86f4195d0743)
+```C
+#include <stdio.h>
+
+int main() {
+    int arr[6], i;
+    int *ptr;
+
+    ptr = arr;
+
+    printf("Enter 6 integers:\n");
+    for(i = 0; i < 6; i++) {
+        scanf("%d", ptr + i);
+    }
+
+    printf("The array elements are:\n");
+    for(i = 0; i < 6; i++) {
+        printf("%d ", *(ptr + i));
+    }
+
+    return 0;
+}
+```
 
 ## OUTPUT
-![Screenshot 2025-04-27 155605](https://github.com/user-attachments/assets/3a6d77e6-feb7-44f9-a25e-c775c1857c64)
+<img width="456" height="140" alt="image" src="https://github.com/user-attachments/assets/73f8b840-8a46-4e09-ac6b-a102b8ff43e0" />
+
  
 ## RESULT
 Thus the C program to read and display an array of any 6 integer elements using pointer has been executed
